@@ -14,12 +14,12 @@ if (value % i == 0) {
 int k = 2;
 uint64_t nPrime(uint64_t n) {
 while (n != 0) {
-if (prost(k) == true) {
+if (checkPrime(k) == true) {
   k++;
-  return noe(n - 1);
+  return nPrime(n - 1);
 }
 k++;
-return noe(n);
+return nPrime(n);
 }
 return k-1;
 }
@@ -50,7 +50,7 @@ for (int i = 2; i <= hbound; i++) {
      }
 if (c == 2) {
   m += hbound;
-  return sum(hbound);
+  return sumPrime(hbound);
 }
      }
 return m;
