@@ -11,46 +11,33 @@ for (int i = 2; i < value; i++) {
   }
 return true;
 }
-int k = 2;
 uint64_t nPrime(uint64_t n) {
-while (n != 0) {
-  if (checkPrime(k) == true) {
-     k++;
-     return nPrime(n - 1);
+int k = 0;
+for (int i = 2; ; i++) {
+  if (checkPrime(i)) {
+     k += 1;
+     if (k == n) {
+       return i;
+            }
+        }
+    }
 }
-k++;
-return nPrime(n);
-}
-return k - 1;
-}
+
 uint64_t nextPrime(uint64_t value) {
-while (1) {
-int c = 1;
-value++;
-for (int i = 2; i <= value; i++) {
-  if (value % i == 0) {
-     c++;
-     }
-  }
-if (c == 2) {
-  return value;
-  }
-  }
+for (int i = value + 1; ; i++) {
+  if (checkPrime(i)) {
+     return i;
+        }
+    }
 }
-int m = 0;
+
+
 uint64_t sumPrime(uint64_t hbound) {
-while (hbound != 0) {
-int c = 1;
-hbound--;
-for (int i = 2; i <= hbound; i++) {
-  if (hbound % i == 0) {
-     c++;
-     }
-}
-if (c == 2) {
-  m += hbound;
-  return sumPrime(hbound);
+int sum = 0;
+for (int i = 2; i < hbound; i++) {
+  if (checkPrime(i)) {
+     sum += i;
+    }
   }
-}
-return m;
+return sum;
 }
