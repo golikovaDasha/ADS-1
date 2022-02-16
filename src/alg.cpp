@@ -15,8 +15,8 @@ int k = 2;
 uint64_t nPrime(uint64_t n) {
 while (n != 0) {
 if (prost(k) == true) {
-	 k++;
-     return noe(n - 1);
+  k++;
+  return noe(n - 1);
 }
 k++;
 return noe(n);
@@ -30,7 +30,7 @@ int c = 1;
 value++;
 for (int i = 2; i <= value; i++) {
   if (value % i == 0) {
-	 c++;
+    c++;
       }
 }
      if (c == 2) {
@@ -44,14 +44,14 @@ while (hbound != 0) {
 int c = 1;
 hbound--;
 for (int i = 2; i <= hbound; i++) {
-	 if (hbound % i == 0) {
+    if (hbound % i == 0) {
        c++;
      }
      }
 if (c == 2) {
-	 m += hbound;
-     return sum(hbound);
-}			
+  m += hbound;
+  return sum(hbound);
+}
      }
 return m;
 }
