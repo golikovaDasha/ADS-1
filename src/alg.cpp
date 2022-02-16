@@ -13,7 +13,7 @@ if (value == 2) {
 for (int i = 2; i <= sqrt(value); i++) {
   if (value % i == 0) {
      return false;
-   }
+}
 }
 return true;
 }
