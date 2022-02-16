@@ -23,7 +23,6 @@ return nPrime(n);
 }
 return k - 1;
 }
-
 uint64_t nextPrime(uint64_t value) {
 while (1) {
 int c = 1;
@@ -33,7 +32,6 @@ for (int i = 2; i <= value; i++) {
      c++;
      }
   }
-
 if (c == 2) {
   return value;
   }
