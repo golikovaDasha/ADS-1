@@ -38,12 +38,12 @@ value++;
 for (int i = 2; i <= value; i++) {
   if (value % i == 0) {
      c++;
-   }
+  }
 }
 
 if (c == 2) {
   return value;
-   }
+  }
 }
 
 
