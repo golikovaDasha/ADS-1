@@ -45,6 +45,7 @@ if (c == 2) {
   return value;
   }
 }
+}
 
 
 uint64_t sumPrime(uint64_t hbound) {
