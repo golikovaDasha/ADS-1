@@ -19,7 +19,7 @@ for (int i = 2; i <= sqrt(value); i++) {
 return true;
 }
 uint64_t nPrime(uint64_t n) {
-int k = 0;
+uint64_t k = 0;
 for (int i = 2; ; i++) {
   if (checkPrime(i)) {
      k += 1;
@@ -40,8 +40,8 @@ for (int i = value + 1; ; i++) {
 
 
 uint64_t sumPrime(uint64_t hbound) {
-int sum = 0;
-for (int i = 2; i < hbound; i++) {
+uint64_t sum = 0;
+for (int i = 0; i < hbound; i++) {
   if (checkPrime(i)) {
      sum += i;
     }
